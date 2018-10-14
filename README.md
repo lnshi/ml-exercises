@@ -8,7 +8,9 @@
 
 ## Accumulations / References
 
-1. `np.array([0, 0])` vs `np.array([0., 0.])`
+1. [如何理解最小二乘法？](https://mp.weixin.qq.com/s/4e9ZiiGIOWx_ZUGjzgavWw)
+
+2. `np.array([0, 0])` vs `np.array([0., 0.])`
 
     ```
     >>> import numpy as np
