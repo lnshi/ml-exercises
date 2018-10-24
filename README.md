@@ -4,7 +4,7 @@
 
 ## Topics
 
-- [Multiple linear regression](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm001_multiple_linear_regression/multiple_linear_regression.html)
+- [Multiple linear regression gradient descent](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm001_multiple_linear_regression_gradient_descent/multiple_linear_regression_gradient_descent.html)
 
 - [Gradient and gradient descent](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm002_gradient_and_gradient_descent/gradient_and_gradient_descent.html)
 
