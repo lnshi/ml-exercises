@@ -4,7 +4,7 @@ layout: default
 
 ### Topics
 
-- [Multiple linear regression gradient descent](./jupyter_notebooks_in_html/rdm001_multiple_linear_regression_gradient_descent/multiple_linear_regression_gradient_descent.html)
+- [Multivariable linear regression(gradient descent)](./jupyter_notebooks_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html)
 
 - [Gradient and gradient descent](./jupyter_notebooks_in_html/rdm002_gradient_and_gradient_descent/gradient_and_gradient_descent.html)
 
