@@ -10,6 +10,8 @@
 
 - [Gradient descent learning rate chosen](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html)
 
+- [Normal equation](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm004_normal_equation/normal_equation.html)
+
 ## Accumulations / References
 
 1. [如何理解最小二乘法？](https://mp.weixin.qq.com/s/4e9ZiiGIOWx_ZUGjzgavWw)
