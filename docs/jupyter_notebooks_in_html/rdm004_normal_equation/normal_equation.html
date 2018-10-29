@@ -13124,9 +13124,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Vector-operations">Vector operations<a class="anchor-link" href="#Vector-operations">&#182;</a></h3><h4 id="Addition-and-subtraction">Addition and subtraction<a class="anchor-link" href="#Addition-and-subtraction">&#182;</a></h4><ul>
+<h3 id="Vector-operations">Vector operations<a class="anchor-link" href="#Vector-operations">&#182;</a></h3><h4 id="Addition-and-subtraction">Addition and subtraction<a class="anchor-link" href="#Addition-and-subtraction">&#182;</a></h4><ol>
 <li>Let $\vec{u} = (u_1, u_2)$ and $\vec{v} = (v_1, v_2)$, then $\vec{u} + \vec{v} = (u_1 + v_1,\, u_2 + v_2)$, $\vec{u} - \vec{v} = (u_1 - v_1,\, u_2 - v_2)$</li>
-</ul>
+</ol>
 <p><img src="./addition_subtraction.gif"></p>
 <h4 id="Dot-product-(scalar-product,-inner-product)">Dot product (scalar product, inner product)<a class="anchor-link" href="#Dot-product-(scalar-product,-inner-product)">&#182;</a></h4><ol>
 <li>The dot product gives a number as an answer (a 'scalar', not a vector).</li>
@@ -13169,19 +13169,16 @@ $$
 $$
 \vec{c} = \vec{a} \times \vec{b} = (a_yb_z - a_zb_y,\, a_zb_x - a_xb_z,\, a_xb_y - a_yb_x)
 $$</p>
-<ul>
-<li><strong>Question: how do we extend this to the cross product of a four dimensional vector or more higher, like the right part of the above graph?</strong></li>
-</ul>
+<p><strong>Question: how do we extend this to the cross product of a four dimensional vector or more higher, like the right part of the above graph?</strong></p>
 </li>
+</ol>
+<ol>
 <li><p>Which direction?</p>
-<ul>
-<li><p>The cross product could point in the completely opposite direction and still be at right angles to the two other vectors, so we have the <strong>"Right Hand Rule"</strong>:</p>
-<ul>
-<li>With your right-hand, point your index finger along vector a, and point your middle finger along vector b: the cross product goes in the direction of your thumb.</li>
-<li><img src="right_hand_rule.jpg"></li>
-</ul>
-</li>
-</ul>
+<p>The cross product could point in the completely opposite direction and still be at right angles to the two other vectors, so we have the <strong>"Right Hand Rule"</strong>:</p>
+
+<pre><code> With your right-hand, point your index finger along vector a, and point your middle finger along vector b: the cross product goes in the direction of your thumb.
+</code></pre>
+<p><img src="right_hand_rule.jpg"></p>
 </li>
 </ol>
 
@@ -13191,37 +13188,37 @@ $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Normal-equation">Normal equation<a class="anchor-link" href="#Normal-equation">&#182;</a></h3><h4 id="Lets-use-the-same-sample-dataset-from-my-another-post:-Multivariable-linear-regression(gradient-descent)-to-reveal-the-normal-equation-first:">Lets use the same sample dataset from my another post: <a href="https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html#Lets-say-we-have-sample-data-set:">Multivariable linear regression(gradient descent)</a> to reveal the normal equation first:<a class="anchor-link" href="#Lets-use-the-same-sample-dataset-from-my-another-post:-Multivariable-linear-regression(gradient-descent)-to-reveal-the-normal-equation-first:">&#182;</a></h4><ul>
+<h3 id="Normal-equation">Normal equation<a class="anchor-link" href="#Normal-equation">&#182;</a></h3><h4 id="Lets-use-the-same-sample-dataset-from-my-another-post:-Multivariable-linear-regression(gradient-descent)-to-reveal-the-normal-equation-first:">Lets use the same sample dataset from my another post: <a href="https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html#Lets-say-we-have-sample-data-set:">Multivariable linear regression(gradient descent)</a> to reveal the normal equation first:<a class="anchor-link" href="#Lets-use-the-same-sample-dataset-from-my-another-post:-Multivariable-linear-regression(gradient-descent)-to-reveal-the-normal-equation-first:">&#182;</a></h4><ol>
 <li><p>We still try to find the below fitting equation to minimise the $\sum\limits_{i=1}^n\varepsilon_i^2$</p>
 <p>$$
-y_\theta(x_1, x_2, \dots, x_m) = \
-\theta \begin{pmatrix}1 &amp; x_1 &amp; x_2 &amp; \dots &amp; x_m\end{pmatrix}, \,
-\theta = \begin{pmatrix} \theta_0 \\ \theta_1 \\ \vdots \\ \theta_m \end{pmatrix}
-\\
-$$</p>
+ y_\theta(x_1, x_2, \dots, x_m) = \
+ \theta \begin{pmatrix}1 &amp; x_1 &amp; x_2 &amp; \dots &amp; x_m\end{pmatrix}, \,
+ \theta = \begin{pmatrix} \theta_0 \\ \theta_1 \\ \vdots \\ \theta_m \end{pmatrix}
+ \\
+ $$</p>
 </li>
 <li><p>Normal equation:</p>
 <p>$$
-\text{Let matrix }X = \
-\begin{pmatrix}
-  1 &amp; x_1^{(1)} &amp; x_2^{(1)} &amp; \dots &amp; x_m^{(1)} \\
-  1 &amp; x_1^{(2)} &amp; x_2^{(2)} &amp; \dots &amp; x_m^{(2)} \\
-  \vdots \\
-  1 &amp; x_1^{(n)} &amp; x_2^{(n)} &amp; \dots &amp; x_m^{(n)}
-\end{pmatrix}, \,
-\text{and matrix } y = \
-\begin{pmatrix}
-  y^{(1)} \\
-  y^{(2)} \\
-  \vdots \\
-  y^{(n)}
-\end{pmatrix}
-$$</p>
+ \text{Let matrix }X = \
+ \begin{pmatrix}
+   1 &amp; x_1^{(1)} &amp; x_2^{(1)} &amp; \dots &amp; x_m^{(1)} \\
+   1 &amp; x_1^{(2)} &amp; x_2^{(2)} &amp; \dots &amp; x_m^{(2)} \\
+   \vdots \\
+   1 &amp; x_1^{(n)} &amp; x_2^{(n)} &amp; \dots &amp; x_m^{(n)}
+ \end{pmatrix}, \,
+ \text{and matrix } y = \
+ \begin{pmatrix}
+   y^{(1)} \\
+   y^{(2)} \\
+   \vdots \\
+   y^{(n)}
+ \end{pmatrix}
+ $$</p>
 <p>$$
-\text{then matrix } \theta = (X^TX)^{-1}X^Ty
-$$</p>
+ \text{then matrix } \theta = (X^TX)^{-1}X^Ty
+ $$</p>
 </li>
-</ul>
+</ol>
 <h4 id="How-do-we-get-the-normal-equation?">How do we get the normal equation?<a class="anchor-link" href="#How-do-we-get-the-normal-equation?">&#182;</a></h4><ol>
 <li><p>Lets see one simplest example in $R^2$ space:</p>
 <p>Example 1: kike below figure, there are two vectors in $R^2$ space, try to find out a constant $\theta$ to make $\theta\vec{a} = \vec{b}$.
@@ -13240,85 +13237,71 @@ $$</p>
 <li><p>In reality, nearly all cases will be like above two cases, there is no <strong>perfect solution</strong>, but how do we find a <strong>best solution</strong> to minimise the errors? Just like in 'multivariable linear regression' we are trying to find out the fiting equation to minisize the $\sum\limits_{i=1}^n\varepsilon_i^2$.</p>
 </li>
 <li><p>Projection</p>
-<ul>
-<li><p>In above 'Example 1', the best solution is: we leave the $\vec{b}$'s component which is vertical to $\vec{a}$ alone, only consider its component which has same direction with $\vec{a}$ ($\vec{b}$'s vertical projection on $\vec{a}$), that is: $\vec{p} = \theta^*\vec{a}$, indicated in below figure:
-<img src="normal_equation_2.jpg"></p>
-<p>Then the original problem $\theta\vec{a} = \vec{b}$ is converted to find a $\theta^*$ to make $\theta^*\vec{a} = \vec{a}$ ( <strong>$\theta^*$ is the best estimator of $\theta$</strong> ).</p>
+<p>In above 'Example 1', the best solution is: we leave the $\vec{b}$'s component which is vertical to $\vec{a}$ alone, only consider its component which has same direction with $\vec{a}$ ($\vec{b}$'s vertical projection on $\vec{a}$), that is: $\vec{p} = \theta^*\vec{a}$, indicated in below figure:
+ <img src="normal_equation_2.jpg"></p>
+<p>Then the original problem $\theta\vec{a} = \vec{b}$ is converted to find a $\theta^*$ to make $\theta^*\vec{a} = \vec{p}$ ( <strong>$\theta^*$ is the best estimator of $\theta$</strong> ).</p>
 <p>Since $\vec{e} \perp \vec{a}$, then:</p>
 <p>$$
-\begin{align*}
-&amp;\vec{a} \bullet (\vec{b} - \vec{p}) = 0 \\
-&amp;\Rightarrow \vec{a} \bullet (\vec{b} - \theta^*\vec{a}) = 0 \\
-&amp;\Rightarrow \vec{a}^T \bullet (\vec{b} - \theta^*\vec{a}) = 0 \text{ (use }\vec{a}^T \text{so it can be better extended to a higher dimensional matrix)} \\
-&amp;\Rightarrow \vec{a}^T \bullet \vec{b} = \theta^*\vec{a}^T \bullet \vec{a} \\
-&amp;\Rightarrow \theta^* = \frac{\vec{a}^T \bullet \vec{b}}{\vec{a}^T \bullet \vec{a}}
-\end{align*}
-$$</p>
-</li>
-<li><p>Lets see in above 'Example 2' how do we extend the theory we just got:</p>
+ \begin{align*}
+   &amp;\vec{a} \bullet (\vec{b} - \vec{p}) = 0 \\
+   &amp;\Rightarrow \vec{a} \bullet (\vec{b} - \theta^*\vec{a}) = 0 \\
+   &amp;\Rightarrow \vec{a}^T \bullet (\vec{b} - \theta^*\vec{a}) = 0 \text{ (use }\vec{a}^T \text{so it can be better extended to a higher dimensional matrix)} \\
+   &amp;\Rightarrow \vec{a}^T \bullet \vec{b} = \theta^*\vec{a}^T \bullet \vec{a} \\
+   &amp;\Rightarrow \theta^* = \frac{\vec{a}^T \bullet \vec{b}}{\vec{a}^T \bullet \vec{a}}
+ \end{align*}
+ $$</p>
+<p>Lets see for above 'Example 2' how do we extend the theory we just got:</p>
 <p>In above 'Example 2', the best solution is: we leave $\vec{b}$'s component which is vertical to plane P alone, only consider its component which is inside plane P ( $\vec{b}$'s vertical projection on plane P ), that is:</p>
 <p>$$
-\vec{p} = \theta^*\begin{pmatrix}\vec{a_1} &amp; \vec{a_2}\end{pmatrix}, \, \
-\theta^* = \
-\begin{pmatrix}
-\theta_1^* \\
-\theta_2^*
-\end{pmatrix}
-\quad
-(\, \text{that is: }\vec{p} = \theta_1^*\vec{a_1} + \theta_2^*\vec{a_2} \,)
-$$</p>
+ \vec{p} = \theta^*\begin{pmatrix}\vec{a_1} &amp; \vec{a_2}\end{pmatrix}, \, \
+ \theta^* = \
+ \begin{pmatrix}
+   \theta_1^* \\
+   \theta_2^*
+ \end{pmatrix}
+ \quad
+ (\, \text{that is: }\vec{p} = \theta_1^*\vec{a_1} + \theta_2^*\vec{a_2} \,)
+ $$</p>
 <p>indicated in below figure:
-<img src="normal_equation_3.jpg"></p>
+ <img src="normal_equation_3.jpg"></p>
 <p>Then the original problem $\theta_1\vec{a_1} + \theta_2\vec{a_2} = \vec{b}$ is converted to find a $\theta^* = \begin{pmatrix}\theta_1^* \\ \theta_2^*\end{pmatrix}$ to make $\vec{p} = \theta^*\begin{pmatrix}\vec{a_1} &amp; \vec{a_2}\end{pmatrix}$ ( <strong>$\theta^*$ is the best estimator of $\theta$</strong> ).</p>
-</li>
-</ul>
 <hr>
 <hr>
 <center>Lets verify some very basic stuff</center><p>Lets say in $R^3$ space we have three basis vectors $\vec{a_1} = (a_{1x}, a_{1y}, a_{1z})$, $\vec{a_2} = (a_{2x}, a_{2y}, a_{2z})$ and $\vec{a_3} = (a_{3x}, a_{3y}, a_{3z})$, and a combination of constants $\theta_1$, $\theta_2$ and $\theta_3$ to make: $\vec{p} = \theta_1\vec{a_1} + \theta_2\vec{a_2} + \theta_3\vec{a_3}$.</p>
-<ul>
-<li><p>Most straightforward calculation:
-$$
-\begin{align*}
-\vec{p} &amp;= \theta_1\vec{a_1} + \theta_2\vec{a_2} + \theta_3\vec{a_3} \</p>
-
-<pre><code>  &amp;= \theta_1(a_{1x}, a_{1y}, a_{1z}) + \theta_2(a_{2x}, a_{2y}, a_{2z}) + \theta_3(a_{3x}, a_{3y}, a_{3z}) \\
-  &amp;= (\theta_1a_{1x} + \theta_2a_{2x} + \theta_3a_{3x}, \theta_1a_{1y} + \theta_2a_{2y} + \theta_3a_{3y}, \theta_1a_{1z} + \theta_2a_{2z} + \theta_3a_{3z})
-</code></pre>
-<p>\end{align*}
-$$</p>
-</li>
-<li><p>Matrix way:
-$$
-\text{Let matrix }A = \begin{pmatrix}</p>
-
-<pre><code>                  | &amp; | &amp; | \\
-                  \vec{a_1} &amp; \vec{a_2} &amp; \vec{a_3} \\
-                  | &amp; | &amp; |
-                \end{pmatrix}
-              = \begin{pmatrix}
-                  a_{1x} &amp; a_{2x} &amp; a_{3x} \\
-                  a_{1y} &amp; a_{2y} &amp; a_{3y} \\
-                  a_{1z} &amp; a_{2z} &amp; a_{3z}
-                \end{pmatrix}, \,
-</code></pre>
-<p>\text{and matrix }\theta = \begin{pmatrix}</p>
-
-<pre><code>                       \theta_1 \\
-                       \theta_2 \\
-                       \theta_3
-                     \end{pmatrix}
-</code></pre>
-<p>$$</p>
+<p>Most straightforward calculation:
+ $$
+ \begin{align*}
+   \vec{p} &amp;= \theta_1\vec{a_1} + \theta_2\vec{a_2} + \theta_3\vec{a_3} \\
+   &amp;= \theta_1(a_{1x}, a_{1y}, a_{1z}) + \theta_2(a_{2x}, a_{2y}, a_{2z}) + \theta_3(a_{3x}, a_{3y}, a_{3z}) \\
+   &amp;= (\theta_1a_{1x} + \theta_2a_{2x} + \theta_3a_{3x}, \theta_1a_{1y} + \theta_2a_{2y} + \theta_3a_{3y}, \theta_1a_{1z} + \theta_2a_{2z} + \theta_3a_{3z})
+ \end{align*}
+ $$</p>
+<p>Matrix way:
+ $$
+ \text{Let matrix }A = \
+ \begin{pmatrix}
+   | &amp; | &amp; | \\
+   \vec{a_1} &amp; \vec{a_2} &amp; \vec{a_3} \\
+   | &amp; | &amp; |
+ \end{pmatrix}
+ = \begin{pmatrix}
+   a_{1x} &amp; a_{2x} &amp; a_{3x} \\
+   a_{1y} &amp; a_{2y} &amp; a_{3y} \\
+   a_{1z} &amp; a_{2z} &amp; a_{3z}
+ \end{pmatrix}, \,
+ \text{and matrix }\theta = \
+ \begin{pmatrix}
+   \theta_1 \\
+   \theta_2 \\
+   \theta_3
+ \end{pmatrix}
+ $$</p>
 <p>$$
-\begin{align*}
-\text{then }\vec{p} &amp;= A\theta \</p>
-
-<pre><code>                &amp;= (\theta_1a_{1x} + \theta_2a_{2x} + \theta_3a_{3x}, \theta_1a_{1y} + \theta_2a_{2y} + \theta_3a_{3y}, \theta_1a_{1z} + \theta_2a_{2z} + \theta_3a_{3z})
-</code></pre>
-<p>\end{align*}
-$$</p>
-</li>
-</ul>
+ \begin{align*}
+   \text{then }\vec{p} &amp;= A\theta \\
+   &amp;= (\theta_1a_{1x} + \theta_2a_{2x} + \theta_3a_{3x}, \theta_1a_{1y} + \theta_2a_{2y} + \theta_3a_{3y}, \theta_1a_{1z} + \theta_2a_{2z} + \theta_3a_{3z})
+ \end{align*}
+ $$</p>
 <hr>
 <hr>
 <p>Lets continue to extend the theory we got from 'Example 1' $R^2$ to 'Example 2' $R^3$:</p>
@@ -13328,32 +13311,24 @@ $$</p>
  \quad \
  (\text{maybe you already noticed: }|A\theta^* - \vec{b}|^2 \text{ is the }\sum\limits_{i=1}^n\varepsilon_i^2 \text{ we tried to minisize in the least square method})
  $$</p>
-<ul>
-<li>We find the $\theta\vec{a} = \vec{b}$ in $R^2$ now in $R^3$ is extended to $A\vec{\theta} = \vec{b}$;</li>
-<li>And correspondingly the $\theta^*\vec{a} = \vec{p}$ in $R^2$ now in $R^3$ is extended to $A\vec{\theta^*} = \vec{p}$;</li>
-</ul>
+<p>We find the $\theta\vec{a} = \vec{b}$ in $R^2$ now in $R^3$ is extended to $A\vec{\theta} = \vec{b}$;</p>
+<p>And correspondingly the $\theta^*\vec{a} = \vec{p}$ in $R^2$ now in $R^3$ is extended to $A\vec{\theta^*} = \vec{p}$;</p>
 <p>Since $\vec{e} \perp \vec{p}$, then:</p>
 <p>$$
-\begin{align<em>}
- &amp;\begin{cases}
-   a_1^T(\vec{b} - A\vec{\theta^</em>}) = 0 \
+ \begin{cases}
+   a_1^T(\vec{b} - A\vec{\theta^*}) = 0 \\
    a_2^T(\vec{b} - A\vec{\theta^*}) = 0
  \end{cases}
- \
- &amp;\Rightarrow \
-   \begin{pmatrix}</p>
-
-<pre><code> - a_1^T - \\
- - a_2^T -
-</code></pre>
-<p>\end{pmatrix} \
-   (\vec{b} - A\vec{\theta^<em>}) = 0 \
- &amp;\Rightarrow A^T(\vec{b} - A\vec{\theta^</em>}) = 0 \
- &amp;\text{ (remember in }R^2 \text{ we had }\vec{a}^T(\vec{b} - \theta^<em>\vec{a}) = 0, \text{ it is just a special case of current one: in }R^2 \text{ we treat }\vec{a} \text{ as a matrix which only has one column)} \
- &amp;\Rightarrow A^T\vec{b} = A^TA\vec{\theta^</em>} \
- &amp;\Rightarrow \vec{\theta^<em>} = (A^TA)^{-1}A^T\vec{b}
-\end{align</em>}
-$$</p>
+ $$</p>
+<p>$$
+ \begin{align*}
+   &amp;\Rightarrow \begin{pmatrix}- a_1^T - \\ - a_2^T -\end{pmatrix}(\vec{b} - A\vec{\theta^*}) = 0 \\
+   &amp;\Rightarrow A^T(\vec{b} - A\vec{\theta^*}) = 0 \\
+   &amp;\text{ (remember in }R^2 \text{ we had }\vec{a}^T(\vec{b} - \theta^*\vec{a}) = 0, \text{ it is just a special case of current one: in }R^2 \text{ we treat }\vec{a} \text{ as a matrix which only has one column)} \\
+   &amp;\Rightarrow A^T\vec{b} = A^TA\vec{\theta^*} \\
+   &amp;\Rightarrow \vec{\theta^*} = (A^TA)^{-1}A^T\vec{b}
+ \end{align*}
+ $$</p>
 <p>We get the result just like we revealed previously!</p>
 <p>And since we cannot guarantee the matrix A is always square matrix, so we cannot always simplify the result to $A^{-1}\vec{b}$.</p>
 </li>
