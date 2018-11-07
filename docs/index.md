@@ -11,3 +11,5 @@ layout: default
 - [Gradient descent learning rate chosen](./jupyter_notebooks_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html)
 
 - [Normal equation](./jupyter_notebooks_in_html/rdm004_normal_equation/normal_equation.html)
+
+- [PDF vs PMF vs CDF](./jupyter_notebooks_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
