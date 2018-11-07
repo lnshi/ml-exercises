@@ -18,6 +18,8 @@
 
 1. [In gradient descent, must there be a learning rate transition point(safety threshold) for all kinds of cost functions?](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html#Final-question)
 
+2. [Question: how do we extend this to the cross product of a four dimensional vector or more higher, like the right part of the above graph?](http://localhost:8888/notebooks/jupyter_notebooks/rdm004_normal_equation/normal_equation.ipynb#Cross-product)
+
 ## Accumulations / References
 
 1. [如何理解最小二乘法？](https://mp.weixin.qq.com/s/4e9ZiiGIOWx_ZUGjzgavWw)
