@@ -4,15 +4,15 @@
 
 ## Topics
 
-- [Multivariable linear regression(gradient descent)](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html)
+- :whale: [Multivariable linear regression(gradient descent)](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html)
 
-- [Gradient and gradient descent](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm002_gradient_and_gradient_descent/gradient_and_gradient_descent.html)
+- :whale: [Gradient and gradient descent](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm002_gradient_and_gradient_descent/gradient_and_gradient_descent.html)
 
-- [Gradient descent learning rate chosen](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html)
+- :whale: [Gradient descent learning rate chosen](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html)
 
-- [Normal equation](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm004_normal_equation/normal_equation.html)
+- :whale: [Normal equation](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm004_normal_equation/normal_equation.html)
 
-- [PDF vs PMF vs CDF](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
+- :dog: [PDF vs PMF vs CDF](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
 
 ## Questions
 
