@@ -14,6 +14,8 @@
 
 - :dog: [PDF vs PMF vs CDF](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
 
+- :dog: [Bayes’ Theorem and MLE MAP](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm006_Bayes%E2%80%99%20Theorem_and_MLE_MAP/Bayes%E2%80%99%20Theorem_and_MLE_MAP.html)
+
 ## Questions
 
 1. [In gradient descent, must there be a learning rate transition point(safety threshold) for all kinds of cost functions?](https://lnshi.github.io/ml-exercises/jupyter_notebooks_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html#Final-question)

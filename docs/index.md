@@ -13,3 +13,5 @@ layout: default
 - [Normal equation](./jupyter_notebooks_in_html/rdm004_normal_equation/normal_equation.html)
 
 - [PDF vs PMF vs CDF](./jupyter_notebooks_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
+
+- [Bayes’ Theorem and MLE MAP](./jupyter_notebooks_in_html/rdm006_Bayes%E2%80%99%20Theorem_and_MLE_MAP/Bayes%E2%80%99%20Theorem_and_MLE_MAP.html)
