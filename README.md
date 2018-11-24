@@ -6,7 +6,7 @@
 
 ### ml_basics
 
-<details>
+- <details>
   <summary>
     <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html">
       :whale: Multivariable linear regression(gradient descent)
@@ -16,7 +16,7 @@
   - Gradient descent algorithm
 </details>
 
-<details>
+- <details>
   <summary>
     <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm002_gradient_and_gradient_descent/gradient_and_gradient_descent.html">
       :whale: Gradient and gradient descent
@@ -30,7 +30,7 @@
   - Gradient descent algorithm
 </details>
 
-<details>
+- <details>
   <summary>
     <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html">
       :whale: Gradient descent learning rate chosen
@@ -40,7 +40,7 @@
   - Learning rate chosen
 </details>
 
-<details>
+- <details>
   <summary>
     <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm004_normal_equation/normal_equation.html">
       :whale: Normal equation
@@ -53,7 +53,7 @@
   - Normal equation
 </details>
 
-<details>
+- <details>
   <summary>
     <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html">
       :dog: PDF vs PMF vs CDF
@@ -65,7 +65,7 @@
   - CDF (cumulative distribution function)
 </details>
 
-<details>
+- <details>
   <summary>
     <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm006_Bayes%E2%80%99%20Theorem_and_MLE_MAP/Bayes%E2%80%99%20Theorem_and_MLE_MAP.html">
       :dog: Bayes’ Theorem and MLE MAP
