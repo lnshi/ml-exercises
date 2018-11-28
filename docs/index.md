@@ -46,3 +46,22 @@ layout: default
 - [🐶 PDF vs PMF vs CDF](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
 
 - [🐶 Bayes’ Theorem and MLE MAP](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm006_Bayes%E2%80%99%20Theorem_and_MLE_MAP/Bayes%E2%80%99%20Theorem_and_MLE_MAP.html)
+
+- <details>
+    <summary>
+      <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm007_logistic_regression%28binomial_regression%29_and_regularization/logistic_regression%28binomial_regression%29_and_regularization.html">
+        🐶 Logistic regression (binomial regression) and regularization
+      </a>
+    </summary>
+    <p>
+      <ul>
+        <li>Experience scipy.optimize.fmin_tnc</li>
+        <li>Regularization</li>
+        <li>Norm of vector and matrix</li>
+        <li>Dataset features expansion/extraction</li>
+        <li>When a lower dimensional space NOT discriminable dataset is PROJECTED to a PROPER higher dimensional space it always will be discriminable, the boundary is a hyper plane or just a discrimination function.</li>
+        <li>Model accuracy comparison between 10-dimensional and 6-dimensional</li>
+        <li>'linear_model.LogisticRegression' with sklearn</li>
+      </ul>
+    </p>
+  </details>
