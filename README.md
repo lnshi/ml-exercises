@@ -146,3 +146,7 @@
     >>> t
     array([0.97, 0.  ])
     ```
+
+## Memos
+
+1. [Exponential family form of multinomial distribution <- my answer -> link to topic 'GLM and exponential family distributions'](https://stats.stackexchange.com/a/380950/229537)
