@@ -65,3 +65,22 @@ layout: default
       </ul>
     </p>
   </details>
+
+- <details>
+    <summary>
+      <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm008_GLM_and_exponential_family_distributions/GLM_and_exponential_family_distributions.html">
+        🐶 GLM and exponential family distributions
+      </a>
+    </summary>
+    <p>
+      <ul>
+        <li>Bernoulli distribution in GLM form</li>
+        <li>Gaussian distribution (normal distribution) in GLM form</li>
+        <li>Softmax regression (multinomial logistic regression) (categorical distribution (variant 3)) in GLM form</li>
+        <li>GLM ⇒ linear regression</li>
+        <li>GLM ⇒ logistic regression</li>
+        <li>Why the PMF for categorical distribution(special form of multinomial distribution: k > 2 and n = 1) has no coefficient</li>
+        <li>How to use the table here [Table of distributions](https://en.wikipedia.org/wiki/Exponential_family#Table_of_distributions) to build GLM quickly</li>
+      </ul>
+    </p>
+  </details>
