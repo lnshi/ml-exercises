@@ -13244,7 +13244,7 @@ $$<p>Then finally for logistic regresion we can conclude the fitting equation is
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Softmax-regression-(multinomial-logistic-regression)-(categorical-distribution-(variant-3))-in-GLM-form">Softmax regression (multinomial logistic regression) (<a href="https://en.wikipedia.org/wiki/Exponential_family#Table_of_distributions">categorical distribution (variant 3)</a>) in GLM form<a class="anchor-link" href="#Softmax-regression-(multinomial-logistic-regression)-(categorical-distribution-(variant-3))-in-GLM-form">&#182;</a></h3><p>$y$ might can be divided into multiple classes, lets say $k$ classes: $y \in \{1, 2, \dots, k\}$, and the probabilities are $p_1, p_2, \dots, p_k$ respectively, but due to the fact that $p_1 + p_2 + \dots + p_k = 1$, usually we just use amount $k-1$ parameters, that is:</p>
+<h3 id="Softmax-regression-(categorical-distribution-(variant-3))-in-GLM-form">Softmax regression (<a href="https://en.wikipedia.org/wiki/Exponential_family#Table_of_distributions">categorical distribution (variant 3)</a>) in GLM form<a class="anchor-link" href="#Softmax-regression-(categorical-distribution-(variant-3))-in-GLM-form">&#182;</a></h3><p>$y$ might can be divided into multiple classes, lets say $k$ classes: $y \in \{1, 2, \dots, k\}$, and the probabilities are $p_1, p_2, \dots, p_k$ respectively, but due to the fact that $p_1 + p_2 + \dots + p_k = 1$, usually we just use amount $k-1$ parameters, that is:</p>
 $$
 \begin{cases}
   p_i \quad i \in \{1, 2, \dots, k-1\} \\
@@ -13272,7 +13272,7 @@ $$
 \end{cases}
 $$<hr>
 <hr>
-<p>PMF of $T(y)|x; p$</p>
+<h4 id="Reference-Point">Reference Point<a class="anchor-link" href="#Reference-Point">&#182;</a></h4><p>PMF of $T(y)|x; p$</p>
 $$
 \begin{align*}
   f\big(T(y)|x;p\big) &amp;= p_1^{1\{y=1\}} p_2^{1\{y=2\}} \dots p_{k-1}^{1\{y=k-1\}} p_k^{1\{y=k\}} \\
