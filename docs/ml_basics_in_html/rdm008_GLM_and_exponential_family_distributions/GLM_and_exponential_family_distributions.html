@@ -13244,19 +13244,19 @@ $$<p>Then finally for logistic regresion we can conclude the fitting equation is
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Softmax-regression-(categorical-distribution-(variant-3))-in-GLM-form">Softmax regression (<a href="https://en.wikipedia.org/wiki/Exponential_family#Table_of_distributions">categorical distribution (variant 3)</a>) in GLM form<a class="anchor-link" href="#Softmax-regression-(categorical-distribution-(variant-3))-in-GLM-form">&#182;</a></h3><p>$y$ might can be divided into multiple classes, lets say $k$ classes: $y \in \{1, 2, \dots, k\}$, and the probabilities are $p_1, p_2, \dots, p_k$ respectively, but due to the fact that $p_1 + p_2 + \dots + p_k = 1$, usually we just use amount $k-1$ parameters, that is:</p>
+<h3 id="Softmax-regression-(categorical-distribution-(variant-3))-in-GLM-form">Softmax regression (<a href="https://en.wikipedia.org/wiki/Exponential_family#Table_of_distributions">categorical distribution (variant 3)</a>) in GLM form<a class="anchor-link" href="#Softmax-regression-(categorical-distribution-(variant-3))-in-GLM-form">&#182;</a></h3><p>Lets say $y$ can be classified into $k$ classes: $y \in \{1, 2, \dots, k\}$, the probabilities are $p_1, p_2, \dots, p_k$ respectively, and the last class $k$ has special meaning: any sample point not belongs to any of the first $k-1$ classes falls into class $k$, that is:</p>
 $$
 \begin{cases}
   p_i \quad i \in \{1, 2, \dots, k-1\} \\
   p_k = 1 - \sum\limits_{i=1}^{k-1}p_i
 \end{cases}
-$$<p>and we define $T(y) \in R^{k-1}$:</p>
+$$<p>lets define $T(y) \in R^{k-1}$:</p>
 $$
 T(1) = \begin{pmatrix}1 \\ 0 \\ 0 \\ \vdots \\ 0\end{pmatrix}, \
 T(2) = \begin{pmatrix}0 \\ 1 \\ 0 \\ \vdots \\ 0\end{pmatrix}, \
 T(3) = \begin{pmatrix}0 \\ 0 \\ 1 \\ \vdots \\ 0\end{pmatrix}, \
+\dots, \
 T(k-1) = \begin{pmatrix}0 \\ 0 \\ 0 \\ \vdots \\ 1\end{pmatrix}, \
-\dots \
 T(k) = \begin{pmatrix}0 \\ 0 \\ 0 \\ \vdots \\ 0\end{pmatrix}
 $$<p>for expressing above $T(y) \enspace y \in {1,2,\dots,k}$ function better, lets introduce in <a href="https://en.wikipedia.org/wiki/Indicator_function">indicator function</a> $1\{\cdot\}$: $1\{true\} = 1$ and $1\{false\} = 0$</p>
 <p>that is $T(y)|x; p \sim CategoricalDistribution(x_1,x_2,\dots,x_k;1;p_1,p_2,\dots,p_k)$, thus: $E\big[T(y)|x; p\big] = 1\cdot p_i = p_i$ (mean of <a href="https://en.wikipedia.org/wiki/Multinomial_distribution">multinomial distribution</a> or also can refer to mean of the <a href="https://en.wikipedia.org/wiki/Categorical_distribution">categorical distribution</a>).</p>
@@ -13277,6 +13277,7 @@ $$
 \begin{align*}
   f\big(T(y)|x;p\big) &amp;= p_1^{1\{y=1\}} p_2^{1\{y=2\}} \dots p_{k-1}^{1\{y=k-1\}} p_k^{1\{y=k\}} \\
   &amp;= p_1^{1\{y=1\}} p_2^{1\{y=2\}} \dots p_{k-1}^{1\{y=k-1\}} p_k^{1 - \sum\limits_{i=1}^{k-1}1\{y=i\}} \\
+  &amp;\text{note: above } 1 - \sum\limits_{i=1}^{k-1}1\{y=i\} \text{ the 1 actually is a vector with all 1 components} \\
   &amp;= p_1^{T_1(y)} p_2^{T_2(y)} \dots p_{k-1}^{T_{k-1}(y)} p_k^{1 - \sum\limits_{i=1}^{k-1}T_i(y)} \\
   &amp;=  exp\Big( T_1(y)lnp_1 + T_2(y)lnp_2 + \dots + T_{k-1}(y)lnp_{k-1} + \big(1 - \sum\limits_{i=1}^{k-1}T_i(y)\big)lnp_k \Big) \\
   &amp;= exp\Big( T_1(y)ln\frac{p_1}{p_k} + T_2(y)ln\frac{p_2}{p_k} + \dots + T_{k-1}(y)ln\frac{p_{k-1}}{p_k} + lnp_k \Big) \\
@@ -13285,7 +13286,8 @@ $$
 $$<p>where</p>
 $$
 \begin{align*}
-  \eta &amp;= \begin{pmatrix} ln\frac{p_1}{p_k} \\ ln\frac{p_2}{p_k} \\ \vdots \\ ln\frac{p_{k-1}}{p_k} \end{pmatrix} \\
+  \eta &amp;= \begin{pmatrix} ln\frac{p_1}{p_k} \\ ln\frac{p_2}{p_k} \\ \vdots \\ ln\frac{p_{k-1}}{p_k} \end{pmatrix} \
+  = \begin{pmatrix} \theta_1^Tx \\ \theta_2^Tx \\ \vdots \\ \theta_{k-1}^Tx \end{pmatrix} \\
   A(\eta) &amp;= -lnp_k \\
   h(x) &amp;= 1
 \end{align*}
@@ -13296,7 +13298,7 @@ $$
   &amp;\Rightarrow exp(\eta_i) = \frac{p_i}{p_k} \\
   &amp;\Rightarrow p_kexp(\eta_i) = p_i \\
   &amp;\because \sum\limits_{i=1}^k p_i = 1 = \sum\limits_{i=1}^k p_k exp(\eta_i) = p_k \sum\limits_{i=1}^k exp(\eta_i) \\
-  &amp;\therefore p_k = 1 \Big/ \sum\limits_{i=1}^k exp(\eta_i) \\
+  &amp;\therefore p_k = 1 \Big/ \sum\limits_{i=1}^k exp(\eta_i) = 1 \Big/ \sum\limits_{i=1}^k exp(\theta_i^Tx) \\
   \Rightarrow p_i &amp;= p_k exp(\eta_i) = \frac{exp(\eta_i)}{\sum\limits_{i=1}^k exp(\eta_i)}
 \end{align*}
 $$<p>that is:</p>
