@@ -13289,14 +13289,15 @@ $$
   &amp;= p_1^{T_1(y)} p_2^{T_2(y)} \dots p_{k-1}^{T_{k-1}(y)} p_k^{1 - \sum\limits_{i=1}^{k-1}T_i(y)} \\
   &amp;=  exp\Big( T_1(y)lnp_1 + T_2(y)lnp_2 + \dots + T_{k-1}(y)lnp_{k-1} + \big(1 - \sum\limits_{i=1}^{k-1}T_i(y)\big)lnp_k \Big) \\
   &amp;= exp\Big( T_1(y)ln\frac{p_1}{p_k} + T_2(y)ln\frac{p_2}{p_k} + \dots + T_{k-1}(y)ln\frac{p_{k-1}}{p_k} + lnp_k \Big) \\
+  &amp;= exp\Big( T_1(y)ln\frac{p_1}{p_k} + T_2(y)ln\frac{p_2}{p_k} + \dots + T_{k-1}(y)ln\frac{p_{k-1}}{p_k} + T_k(y)ln\frac{p_k}{p_k} + lnp_k \Big) \\
   &amp;= h(y) exp\big( \eta^T T(y) - A(\eta) \big)
 \end{align*}
 $$<p>where</p>
 $$
 \begin{align*}
-  \eta &amp;= \begin{pmatrix} ln\frac{p_1}{p_k} \\ ln\frac{p_2}{p_k} \\ \vdots \\ ln\frac{p_{k-1}}{p_k} \end{pmatrix} \\
+  \eta &amp;= \begin{pmatrix} ln\frac{p_1}{p_k} \\ ln\frac{p_2}{p_k} \\ \vdots \\ ln\frac{p_{k-1}}{p_k} \\ 0 \end{pmatrix} \\
   A(\eta) &amp;= -lnp_k \\
-  T(y) &amp;= \begin{pmatrix} [y==1] \\ [y==2] \\ \vdots \\ [y==k-1] \end{pmatrix} \\
+  T(y) &amp;= \begin{pmatrix} [y==1] \\ [y==2] \\ \vdots \\ [y==k-1] \\ [y==k] \end{pmatrix} \\
   h(y) &amp;= 1
 \end{align*}
 $$<p>calculate $p_i$:</p>
@@ -13322,20 +13323,34 @@ $$
   f_\theta(x) &amp;= E\Big[ T(y)|x; \theta \Big] \\
   &amp;= E \left[ \
     \begin{array}{c|c}
-      1\{y=1\} \\
-      1\{y=2\} \\
+      [y==1] \\
+      [y==2] \\
       \vdots &amp; x; \theta \\
-      1\{y=k-2\} \\
-      1\{y=k-1\}
+      [y==k-1] \\
+      [y==k]
     \end{array}
     \right] \\
-  &amp;= \begin{bmatrix} p_1 \\ p_2 \\ \vdots \\ p_{k-2} \\ p_{k-1} \end{bmatrix} \\
+  &amp;= \begin{bmatrix} p_1 \\ p_2 \\ \vdots \\ p_{k-1} \\ p_{k} \end{bmatrix} \\
   &amp;= \begin{bmatrix} \
-        \frac{exp(\theta_1^T x)}{\sum\limits_{j=1}^k exp(\theta_j^T x)} \\
-        \frac{exp(\theta_2^T x)}{\sum\limits_{j=1}^k exp(\theta_j^T x)} \\
+        \frac{exp(\eta_1)}{\sum\limits_{j=1}^k exp(\eta_j)} \\
+        \frac{exp(\eta_2)}{\sum\limits_{j=1}^k exp(\eta_j)} \\
         \vdots \\
-        \frac{exp(\theta_{k-2}^T x)}{\sum\limits_{j=1}^k exp(\theta_j^T x)} \\
-        \frac{exp(\theta_{k-1}^T x)}{\sum\limits_{j=1}^k exp(\theta_j^T x)}
+        \frac{exp(\eta_{k-1})}{\sum\limits_{j=1}^k exp(\eta_j)} \\
+        \frac{exp(\eta_k)}{\sum\limits_{j=1}^k exp^{\eta_j}}
+    \end{bmatrix} \\
+  &amp;= \begin{bmatrix}
+        \frac{exp(\eta_1)}{1 + \sum\limits_{j=1}^{k-1} exp(\eta_j)} \\
+        \frac{exp(\eta_2)}{1 + \sum\limits_{j=1}^{k-1} exp(\eta_j)} \\
+        \vdots \\
+        \frac{exp(\eta_{k-1})}{1 + \sum\limits_{j=1}^{k-1} exp(\eta_j)} \\
+        \frac{1}{1 + \sum\limits_{j=1}^{k-1} exp(\eta_j)}
+    \end{bmatrix} \\
+  &amp;= \begin{bmatrix}
+        \frac{exp(\eta_1)}{1 + \sum\limits_{j=1}^{k-1} exp(\theta_j^T x)} \\
+        \frac{exp(\eta_2)}{1 + \sum\limits_{j=1}^{k-1} exp(\theta_j^T x)} \\
+        \vdots \\
+        \frac{exp(\eta_{k-1})}{1 + \sum\limits_{j=1}^{k-1} exp(\theta_j^T x)} \\
+        \frac{1}{1 + \sum\limits_{j=1}^{k-1} exp(\theta_j^T x)}
     \end{bmatrix}
 \end{align*}
 $$<p>PMF of $T(y)|x; \theta$</p>
