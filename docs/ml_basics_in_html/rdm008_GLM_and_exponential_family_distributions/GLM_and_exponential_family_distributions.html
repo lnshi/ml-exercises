@@ -13258,8 +13258,8 @@ T(3) = \begin{pmatrix}0 \\ 0 \\ 1 \\ \vdots \\ 0\end{pmatrix}, \
 \dots, \
 T(k-1) = \begin{pmatrix}0 \\ 0 \\ 0 \\ \vdots \\ 1\end{pmatrix}, \
 T(k) = \begin{pmatrix}0 \\ 0 \\ 0 \\ \vdots \\ 0\end{pmatrix}
-$$<p>for expressing above $T(y) \enspace y \in {1,2,\dots,k}$ function better, lets introduce in <a href="https://en.wikipedia.org/wiki/Indicator_function">indicator function</a> $1\{\cdot\}$: $1\{true\} = 1$ and $1\{false\} = 0$</p>
-<p>that is $T(y)|x; p \sim CategoricalDistribution(x_1,x_2,\dots,x_k;1;p_1,p_2,\dots,p_k)$, thus: $E\big[T(y)|x; p\big] = 1\cdot p_i = p_i$ (mean of <a href="https://en.wikipedia.org/wiki/Multinomial_distribution">multinomial distribution</a> or also can refer to mean of the <a href="https://en.wikipedia.org/wiki/Categorical_distribution">categorical distribution</a>).</p>
+$$<p>for expressing above $T(y) \enspace y \in {1,2,\dots,k}$ function better, lets introduce in <a href="https://en.wikipedia.org/wiki/Iverson_bracket">Iverson bracket</a>: $[true] = 1, [false] = 0$.</p>
+<p>that is $T(y)|x; p \sim CategoricalDistribution(x_1,x_2,\dots,x_k;1;p_1,p_2,\dots,p_k)$, thus: $E\big[T(y)|x; p\big] = p_i$ (mean of the <a href="https://en.wikipedia.org/wiki/Categorical_distribution">categorical distribution</a>).</p>
 <hr>
 <hr>
 <h4 id="Why-the-PMF-has-no-coefficient?">Why the PMF has no coefficient?<a class="anchor-link" href="#Why-the-PMF-has-no-coefficient?">&#182;</a></h4><p><a href="https://en.wikipedia.org/wiki/Categorical_distribution">categorical distribution</a> can be treated as a special form of the <a href="https://en.wikipedia.org/wiki/Multinomial_distribution">multinomial distribution</a> with $k&gt;2$ and $n=1$, and since $n=1$, then the coefficient $\frac{n!}{x_1! x_2! \dots x_k!}$ of the multinomial distribution's PMF(<a href="https://en.wikipedia.org/wiki/Multinomial_distribution#Probability_mass_function">https://en.wikipedia.org/wiki/Multinomial_distribution#Probability_mass_function</a>) will be all 1, that is why for our below 'PMF of $T(y)|x; p$' has the form: $p_1^{x_1} p_2^{x_2} \dots p_k^{x_k}$ only, <strong>WITHOUT</strong> that coefficient, more details:</p>
@@ -13270,14 +13270,22 @@ $$
   \text{class 3 is chosen: } \frac{1!}{0! \cdot 0! \cdot 1! \dots 0!} = 1 \\
   \vdots
 \end{cases}
-$$<hr>
+$$<p>more:
+$$
+\begin{cases}
+  \text{2 possibilities and 1 trial } &amp;\sim BernoulliDistribution(p) \\
+  \text{2 possibilities and n(n&gt;1) trials } &amp;\sim BonimalDistribution(n, p) \\
+  \text{k(k&gt;2) possibilities and 1 trial } &amp;\sim CategoricalDistribution(x_1,x_2,\dots,x_k;1;p_1,p_2,\dots,p_k) \\
+  \text{k(k&gt;2) possibilities and n(n&gt;1) trials } &amp;\sim MultinomialDistribution(x_1,x_2,\dots,x_k;n;p_1,p_2,\dots,p_k)
+\end{cases}
+$$</p>
+<hr>
 <hr>
 <h4 id="Reference-Point">Reference Point<a class="anchor-link" href="#Reference-Point">&#182;</a></h4><p>PMF of $T(y)|x; p$</p>
 $$
 \begin{align*}
-  f\big(T(y)|x;p\big) &amp;= p_1^{1\{y=1\}} p_2^{1\{y=2\}} \dots p_{k-1}^{1\{y=k-1\}} p_k^{1\{y=k\}} \\
-  &amp;= p_1^{1\{y=1\}} p_2^{1\{y=2\}} \dots p_{k-1}^{1\{y=k-1\}} p_k^{1 - \sum\limits_{i=1}^{k-1}1\{y=i\}} \\
-  &amp;\text{note: above } 1 - \sum\limits_{i=1}^{k-1}1\{y=i\} \text{ the 1 actually is a vector with all 1 components} \\
+  f\big(T(y)|x;p\big) &amp;= p_1^{[y==1]} p_2^{[y==2]} \dots p_{k-1}^{[y==k-1]} p_k^{[y==k]} \\
+  &amp;= p_1^{[y==1]} p_2^{[y==2]} \dots p_{k-1}^{[y==k-1]} p_k^{1 - \sum\limits_{i=1}^{k-1}[k==i]} \\
   &amp;= p_1^{T_1(y)} p_2^{T_2(y)} \dots p_{k-1}^{T_{k-1}(y)} p_k^{1 - \sum\limits_{i=1}^{k-1}T_i(y)} \\
   &amp;=  exp\Big( T_1(y)lnp_1 + T_2(y)lnp_2 + \dots + T_{k-1}(y)lnp_{k-1} + \big(1 - \sum\limits_{i=1}^{k-1}T_i(y)\big)lnp_k \Big) \\
   &amp;= exp\Big( T_1(y)ln\frac{p_1}{p_k} + T_2(y)ln\frac{p_2}{p_k} + \dots + T_{k-1}(y)ln\frac{p_{k-1}}{p_k} + lnp_k \Big) \\
@@ -13286,17 +13294,17 @@ $$
 $$<p>where</p>
 $$
 \begin{align*}
-  \eta &amp;= \begin{pmatrix} ln\frac{p_1}{p_k} \\ ln\frac{p_2}{p_k} \\ \vdots \\ ln\frac{p_{k-1}}{p_k} \end{pmatrix} \
-  = \begin{pmatrix} \theta_1^Tx \\ \theta_2^Tx \\ \vdots \\ \theta_{k-1}^Tx \end{pmatrix} \\
+  \eta &amp;= \begin{pmatrix} ln\frac{p_1}{p_k} \\ ln\frac{p_2}{p_k} \\ \vdots \\ ln\frac{p_{k-1}}{p_k} \end{pmatrix} \\
   A(\eta) &amp;= -lnp_k \\
-  h(x) &amp;= 1
+  T(y) &amp;= \begin{pmatrix} [y==1] \\ [y==2] \\ \vdots \\ [y==k-1] \end{pmatrix} \\
+  h(y) &amp;= 1
 \end{align*}
 $$<p>calculate $p_i$:</p>
 $$
 \begin{align*}
   \eta_i &amp;= ln\frac{p_i}{p_k} \\
   &amp;\Rightarrow exp(\eta_i) = \frac{p_i}{p_k} \\
-  &amp;\Rightarrow p_kexp(\eta_i) = p_i \\
+  &amp;\Rightarrow p_i = p_k exp(\eta_i) \\
   &amp;\because \sum\limits_{i=1}^k p_i = 1 = \sum\limits_{i=1}^k p_k exp(\eta_i) = p_k \sum\limits_{i=1}^k exp(\eta_i) \\
   &amp;\therefore p_k = 1 \Big/ \sum\limits_{i=1}^k exp(\eta_i) = 1 \Big/ \sum\limits_{i=1}^k exp(\theta_i^Tx) \\
   \Rightarrow p_i &amp;= p_k exp(\eta_i) = \frac{exp(\eta_i)}{\sum\limits_{i=1}^k exp(\eta_i)}
@@ -13332,7 +13340,7 @@ $$
 \end{align*}
 $$<p>PMF of $T(y)|x; \theta$</p>
 $$
-  f\big( T(y)|x; \theta \big) = \prod_{i=1}^k \Bigg( \frac{exp(\theta_i^T x)}{\sum\limits_{j=1}^k exp(\theta_j^T x)} \Bigg)^{1\{y=i\}}
+  f\big( T(y)|x; \theta \big) = \prod_{i=1}^k \Bigg( \frac{exp(\theta_i^T x)}{\sum\limits_{j=1}^k exp(\theta_j^T x)} \Bigg)^{[y==i]}
 $$<hr>
 <hr>
 <p>with sample dataset:</p>
@@ -13405,7 +13413,7 @@ $$<p>Find the $\theta$ with gradient descent algorithm.</p>
 </li>
 <li><p><a href="https://en.wikipedia.org/wiki/Joint_probability_distribution">Joint probability distribution</a></p>
 </li>
-<li><p><a href="https://en.wikipedia.org/wiki/Indicator_function">Indicator function</a></p>
+<li><p><a href="https://en.wikipedia.org/wiki/Iverson_bracket">Iverson bracket</a></p>
 </li>
 </ul>
 
