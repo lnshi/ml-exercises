@@ -112,7 +112,7 @@
     </details>
   </p>
 
-- [🐶 Multinomial logistic regression](https://github.com/lnshi/ml-exercises/blob/master/ml_basics/rdm009_multinomial_logistic_regression/multinomial_logistic_regression.ipynb)
+- [🐶 Multinomial logistic regression](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm009_multinomial_logistic_regression/multinomial_logistic_regression.ipynb)
 
 ## Questions
 
