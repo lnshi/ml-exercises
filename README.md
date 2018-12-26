@@ -112,6 +112,8 @@
     </details>
   </p>
 
+- [🐶 Multinomial logistic regression](https://github.com/lnshi/ml-exercises/blob/master/ml_basics/rdm009_multinomial_logistic_regression/multinomial_logistic_regression.ipynb)
+
 ## Questions
 
 1. [In gradient descent, must there be a learning rate transition point(safety threshold) for all kinds of cost functions?](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html#Final-question)
