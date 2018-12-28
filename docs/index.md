@@ -113,3 +113,21 @@ layout: default
   </p>
 
 - [🐶 Multinomial logistic regression](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm009_multinomial_logistic_regression/multinomial_logistic_regression.ipynb?flush_cache=true)
+
+- <p>
+    <details>
+      <summary>
+        <a href="https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm010_neural_network/neural_network.ipynb?flush_cache=true">
+          🔥 Neural network (hand-written digits recognition)
+        </a>
+      </summary>
+      <p>
+        <ul>
+          <li>What's a neural network</li>
+          <li>One-hot encoding</li>
+          <li>Forward propagation</li>
+          <li>Backpropagation algorithm</li>
+        </ul>
+      </p>
+    </details>
+  </p>
