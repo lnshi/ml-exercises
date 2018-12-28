@@ -142,6 +142,8 @@
 
 4. [What are the best practices / skills / underlying theories for the features expansion/extraction?](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm007_logistic_regression%28binomial_regression%29_and_regularization/logistic_regression%28binomial_regression%29_and_regularization.html#Question:-what-are-the-best-practices-/-skills-/-underlying-theories-for-the-features-expansion/extraction?)
 
+5. [For the hand-written digits recognition NN why the hidden layer input size is 25? How about design to use a different size? What is the theory/best practices/skills/prior knowledges here?](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm010_neural_network/neural_network.ipynb?flush_cache=true#Question:-why-the-hidden-layer-has-25-units?)
+
 ## Accumulations / References
 
 1. [如何理解最小二乘法？](https://mp.weixin.qq.com/s/4e9ZiiGIOWx_ZUGjzgavWw)
