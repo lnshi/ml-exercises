@@ -132,6 +132,23 @@
     </details>
   </p>
 
+- <p>
+    <details>
+      <summary>
+        <a href="https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm011_support_vector_machines/support_vector_machines.ipynb?flush_cache=true">
+          🐳 SVM
+        </a>
+      </summary>
+      <p>
+        <ul>
+          <li>Functional margin vs geometric margin, and SVM interpretation</li>
+          <li>Lagrange multiplier, Lagrange duality and KKT conditions</li>
+          <li>Coordinate ascent algorithm and SMO</li>
+        </ul>
+      </p>
+    </details>
+  </p>
+
 ## Questions
 
 1. [In gradient descent, must there be a learning rate transition point(safety threshold) for all kinds of cost functions?](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html#Final-question)
