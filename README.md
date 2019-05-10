@@ -6,7 +6,7 @@
 
 ### ml_basics
 
-- [🐳 Multivariable linear regression(gradient descent)](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html)
+- [▪▪▪ 🐳 Multivariable linear regression(gradient descent)](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html)
 
 - <p>
     <details>
@@ -27,7 +27,7 @@
     </details>
   </p>
 
-- [🐳 Gradient descent learning rate chosen](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html)
+- [▪▪▪ 🐳 Gradient descent learning rate chosen](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html)
 
 - <p>
     <details>
@@ -47,9 +47,9 @@
     </details>
   </p>
 
-- [🐶 PDF vs PMF vs CDF](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
+- [▪▪▪ 🐶 PDF vs PMF vs CDF](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
 
-- [🐶 Bayes’ Theorem and MLE MAP](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm006_Bayes%E2%80%99%20Theorem_and_MLE_MAP/Bayes%E2%80%99%20Theorem_and_MLE_MAP.html)
+- [▪▪▪ 🐶 Bayes’ Theorem and MLE MAP](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm006_Bayes%E2%80%99%20Theorem_and_MLE_MAP/Bayes%E2%80%99%20Theorem_and_MLE_MAP.html)
 
 - <p>
     <details>
@@ -112,7 +112,7 @@
     </details>
   </p>
 
-- [🐶 Multinomial logistic regression](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm009_multinomial_logistic_regression/multinomial_logistic_regression.ipynb?flush_cache=true)
+- [▪▪▪ 🐶 Multinomial logistic regression](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm009_multinomial_logistic_regression/multinomial_logistic_regression.ipynb?flush_cache=true)
 
 - <p>
     <details>
