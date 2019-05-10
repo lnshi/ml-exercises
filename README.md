@@ -6,13 +6,13 @@
 
 ### ml_basics
 
-- [▪▪▪ 🐳 Multivariable linear regression(gradient descent)](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html)
+- [Multivariable linear regression(gradient descent)](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm001_multivariable_linear_regression_gradient_descent/multivariable_linear_regression_gradient_descent.html)
 
 - <p>
     <details>
       <summary>
         <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm002_gradient_and_gradient_descent/gradient_and_gradient_descent.html">
-          🐳 Gradient and gradient descent
+          Gradient and gradient descent
         </a>
       </summary>
       <p>
@@ -27,13 +27,13 @@
     </details>
   </p>
 
-- [▪▪▪ 🐳 Gradient descent learning rate chosen](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html)
+- [Gradient descent learning rate chosen](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html)
 
 - <p>
     <details>
       <summary>
         <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm004_normal_equation/normal_equation.html">
-          🐳 Normal equation
+          Normal equation
         </a>
       </summary>
       <p>
@@ -47,15 +47,15 @@
     </details>
   </p>
 
-- [▪▪▪ 🐶 PDF vs PMF vs CDF](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
+- [PDF vs PMF vs CDF](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm005_PDF_PMF_CDF/PDF_PMF_CDF.html)
 
-- [▪▪▪ 🐶 Bayes’ Theorem and MLE MAP](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm006_Bayes%E2%80%99%20Theorem_and_MLE_MAP/Bayes%E2%80%99%20Theorem_and_MLE_MAP.html)
+- [Bayes’ Theorem and MLE MAP](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm006_Bayes%E2%80%99%20Theorem_and_MLE_MAP/Bayes%E2%80%99%20Theorem_and_MLE_MAP.html)
 
 - <p>
     <details>
       <summary>
         <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm007_logistic_regression%28binomial_regression%29_and_regularization/logistic_regression%28binomial_regression%29_and_regularization.html">
-          🐶 Logistic regression (binomial regression) and regularization
+          Logistic regression (binomial regression) and regularization
         </a>
       </summary>
       <p>
@@ -80,7 +80,7 @@
     <details>
       <summary>
         <a href="https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm008_GLM_and_exponential_family_distributions/GLM_and_exponential_family_distributions.html">
-          🐶 GLM and exponential family distributions
+          GLM and exponential family distributions
         </a>
       </summary>
       <p>
@@ -112,13 +112,13 @@
     </details>
   </p>
 
-- [▪▪▪ 🐶 Multinomial logistic regression](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm009_multinomial_logistic_regression/multinomial_logistic_regression.ipynb?flush_cache=true)
+- [Multinomial logistic regression](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm009_multinomial_logistic_regression/multinomial_logistic_regression.ipynb?flush_cache=true)
 
 - <p>
     <details>
       <summary>
         <a href="https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm010_neural_network/neural_network.ipynb?flush_cache=true">
-          🔥 Neural network (hand-written digits recognition)
+          Neural network (hand-written digits recognition)
         </a>
       </summary>
       <p>
@@ -136,7 +136,7 @@
     <details>
       <summary>
         <a href="https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm011_support_vector_machines/support_vector_machines.ipynb?flush_cache=true">
-          🐳 SVM
+          SVM
         </a>
       </summary>
       <p>
