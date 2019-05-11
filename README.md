@@ -144,6 +144,7 @@
           <li>Functional margin vs geometric margin, and SVM interpretation</li>
           <li>Lagrange multiplier, Lagrange duality and KKT conditions</li>
           <li>Coordinate ascent algorithm and SMO</li>
+          <li>Slack variables and penalty factors</li>
         </ul>
       </p>
     </details>
