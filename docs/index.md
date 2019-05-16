@@ -166,7 +166,6 @@ layout: default
           <li>Eigenvalues and eigenvectors</li>
           <li>Singular value and Singular Value Decomposition</li>
           <li>PCA dimensionality reduction example</li>
-          <li></li>
         </ul>
       </p>
     </details>
