@@ -149,3 +149,25 @@ layout: default
       </p>
     </details>
   </p>
+
+- <p>
+    <details>
+      <summary>
+        <a href="https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm012_principal_components_analysis/principal_components_analysis.ipynb?flush_cache=true">
+          PCA
+        </a>
+      </summary>
+      <p>
+        <ul>
+          <li>What does PCA do?</li>
+          <li>Another interpretation of what does PCA do</li>
+          <li>What are the application scenarios of PCA?</li>
+          <li>PCA pseudo code</li>
+          <li>Eigenvalues and eigenvectors</li>
+          <li>Singular value and Singular Value Decomposition</li>
+          <li>PCA dimensionality reduction example</li>
+          <li></li>
+        </ul>
+      </p>
+    </details>
+  </p>
