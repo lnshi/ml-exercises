@@ -171,6 +171,115 @@
     </details>
   </p>
 
+- <p>
+    <details>
+      <summary>
+        <a href="https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm013_some_generic_questions/some_generic_questions.ipynb?flush_cache=true">
+          Some generic questions
+        </a>
+      </summary>
+      <p>
+        <ul>
+          <li>1. Type 1 error, type 2 error, power of test</li>
+          <li>2. Over-fitting, under-fitting</li>
+          <li>6. How is k-NN different from k-means clustering?</li>
+          <li>7. p-value</li>
+          <li>12. What is naive in a Naive Bayes?</li>
+          <li>13. How can you select k for k-means?</li>
+          <li>14. How to measure a model?</li>
+          <li>18. What is cross-validation?</li>
+          <li>19. What is bias-variance trade off?</li>
+          <li>20. The types of biases that occur during sampling?</li>
+          <li>21. What is the confusion matrix?</li>
+          <li>22. What are exploding/vanishing gradients?</li>
+          <li>25. What is eigenvectors and eigenvalues?</li>
+          <li>27. What are AutoEncorders?</li>
+          <li>28. How do you avoid the over-fitting during the training?</li>
+          <li>29. What are the differences among standardization, normalization and regularization?</li>
+          <li>30. Some feature selection methods used to select the right variables</li>
+          <li>33. MAE vs MSE vs RMSE</li>
+          <li>34. How can outlier values be treated?</li>
+          <li>36. What is a Box-Cox Transformation?</li>
+          <li>37. What is the hyperbolic tree?</li>
+          <li>39. What's the difference between probability and likelihood?</li>
+          <li>40. What cross-validation technique would you use on a time series dataset?</li>
+        </ul>
+      </p>
+    </details>
+  </p>
+
+- [Decision tree and random forest](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm014_decision_tree_and_random_forest/decision_tree_and_random_forest.ipynb?flush_cache=true)
+
+- [k-fold cross validation sklearn example](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm015_k-fold_cross_validation_sklearn_example/k-fold_cross_validation_sklearn_example.ipynb?flush_cache=true)
+
+- <p>
+    <details>
+      <summary>
+        <a href="https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm016_ensemble_learning/ensemble_learning.ipynb?flush_cache=true">
+          Ensemble learning
+        </a>
+      </summary>
+      <p>
+        <ul>
+          <li>What is bootstrapping (bootstrap sampling)?</li>
+          <li>Why do we need bootstrap sampling?</li>
+          <li>Implement Bootstrap Sampling in Python</li>
+          <li>What is ensemble learning</li>
+          <li>Boosting</li>
+          <li>Bagging</li>
+          <li>Stacking</li>
+        </ul>
+      </p>
+    </details>
+  </p>
+
+- <p>
+    <details>
+      <summary>
+        <a href="https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm017_gradient-boost(GBM)_vs_ada-boost_xgboost/gradient-boost(GBM)_vs_ada-boost_xgboost.ipynb?flush_cache=true">
+          Gradient(GBM) vs AdaBoost vs XGBoost
+        </a>
+      </summary>
+      <p>
+        <ul>
+          <li>Decision tree vs random forest</li>
+          <li>Random forest vs gradient boosting</li>
+          <li>Gradient vs AdaBoost</li>
+          <li>XGBoost</li>
+        </ul>
+      </p>
+    </details>
+  </p>
+
+- [RNN and LSTM](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm018_RNN_and_LSTM/RNN_and_LSTM.ipynb?flush_cache=true)
+
+- [Model parameters vs hyperparameters](https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm019_model_parameters_vs_hyperparameters/model_parameters_vs_hyperparameters.ipynb?flush_cache=true)
+
+- <p>
+    <details>
+      <summary>
+        <a href="https://nbviewer.jupyter.org/github/lnshi/ml-exercises/blob/master/ml_basics/rdm020_optimizers/optimizers.ipynb?flush_cache=true">
+          Optimizers
+        </a>
+      </summary>
+      <p>
+        <ul>
+          <li>Gradient descent</li>
+          <li>Types of gradient descent</li>
+          <li>Role of an optimizer</li>
+          <li>Types of optimizers</li>
+          <li>Momentum</li>
+          <li>Nesterov accelerated gradient(NAG)</li>
+          <li>Adagrad — Adaptive Gradient Algorithm</li>
+          <li>Adadelta</li>
+          <li>RMSProp</li>
+          <li>Adam — Adaptive Moment Estimation</li>
+          <li>Nadam- Nesterov-accelerated Adaptive Moment Estimation</li>
+        </ul>
+      </p>
+    </details>
+  </p>
+
 ## Questions
 
 1. [In gradient descent, must there be a learning rate transition point(safety threshold) for all kinds of cost functions?](https://lnshi.github.io/ml-exercises/ml_basics_in_html/rdm003_gradient_descent_learning_rate_chosen/gradient_descent_learning_rate_chosen.html#Final-question)
@@ -211,3 +320,5 @@
 ## Memos
 
 1. [Exponential family form of multinomial distribution <- my answer -> link to topic 'GLM and exponential family distributions'](https://stats.stackexchange.com/a/380950/229537)
+
+2. [Batch Normalization Tensorflow Keras Example](https://towardsdatascience.com/backpropagation-and-batch-normalization-in-feedforward-neural-networks-explained-901fd6e5393e)
